@@ -17,6 +17,3 @@ def accuracy(Jsc, Voc,FF):
         print('good accuracy')
     else:
         print('bad accuracy')
-
-
-accuracy(18.8,0.94,0.69) 

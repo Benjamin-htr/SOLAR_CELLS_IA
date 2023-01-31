@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 # On va chercher notre dataset
-dataFrame = pd.read_excel("SOLAR_CELLS_IA_DATASET.csv")
+dataFrame = pd.read_excel("SOLAR_CELLS_IA_DATASET.xlsx")
 print(dataFrame.head())
 
 # On supprime les colonnes non nécessaire au traitement.

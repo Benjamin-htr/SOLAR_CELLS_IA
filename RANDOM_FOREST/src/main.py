@@ -1,6 +1,6 @@
+import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-import numpy as np
 
 # On va chercher notre dataset
 dataFrame = pd.read_excel("SOLAR_CELLS_IA_DATASET.xlsx")
@@ -30,6 +30,7 @@ X = dataFrame.drop(labels=["PCE"], axis=1)
 
 # On split nos données avec test_size le pourcentage de valeur utilisée comme valeur de test
 from sklearn.model_selection import train_test_split
+
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=20)
 
 
@@ -46,6 +47,7 @@ prediction_test = model.predict(X_test)
 
 # On caclul la précision du model
 from sklearn import metrics
+
 print ("Accuracy = ", metrics.accuracy_score(y_test, prediction_test))
 
 # On affiche l'importance de chaque features
